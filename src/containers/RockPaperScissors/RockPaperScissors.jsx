@@ -71,7 +71,7 @@ const RockPaperScissors = () => {
       ) : (
         <div>
           <p>Game over! {winner} wins!</p>
-          <button onClick={handleReset}>Play again</button>
+          <button onClick={handleReset}>Play again!</button>
         </div>
       )}
     </div>
