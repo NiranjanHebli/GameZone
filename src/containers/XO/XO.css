@@ -1,0 +1,63 @@
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f7fafc; */
+  }
+  
+  .status {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .board-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 100px;
+    width:100px;
+    margin: 2px;
+    font-weight: bold;
+    color: #2d3748;
+    cursor: pointer;
+  }
+  
+  .square:hover {
+    background-color: #e2e8f0;
+  }
+  
+  .square:focus {
+    outline: none;
+  }
+  
+  .square--winner {
+    background-color: #48bb78;
+    color: white;
+  }
+  

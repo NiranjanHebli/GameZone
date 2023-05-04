@@ -1,0 +1,10 @@
+.main{
+    color:floralwhite;
+    margin-top:4px;
+    margin-bottom: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
