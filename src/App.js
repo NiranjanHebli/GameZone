@@ -25,6 +25,8 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/rockpaperscissors" element={<RockPaperScissors />} />
         <Route path="/connectfour" element={<ConnectFour />} />
+
+
         </Routes>
       </Router>
       <Footer/>

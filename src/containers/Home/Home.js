@@ -1,7 +1,6 @@
 import "./Home.css";
 import React from "react";
 import Hero from "../../components/Hero/Hero";
-import CardComp from "../../components/Cards/CardComp";
 import { Link } from "react-router-dom";
 const Home = () => {
   return (
