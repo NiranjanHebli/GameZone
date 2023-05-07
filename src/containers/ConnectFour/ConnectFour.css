@@ -10,10 +10,11 @@ h1 {
   color: aliceblue;
 }
 
-.board {
+.boardConnectFour {
   display: inline-block;
   margin-top: 65px;
-  margin-bottom: 10px;
+
+  margin-bottom: 40px;
 }
 
 .row {
@@ -40,7 +41,7 @@ h1 {
   border-color: white;
 }
 
-.message {
+.messageConnectFour {
 position: relative;
 background-color: rgb(253, 17, 0);
 bottom: 20px;
@@ -48,6 +49,7 @@ width: 50%;
 margin-left: 25%;
 border-radius: 10px;
 font-size: 24px;
+
 }
 
 button {

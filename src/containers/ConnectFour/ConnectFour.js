@@ -165,16 +165,16 @@ function ConnectFour() {
     for (let row = 0; row < ROWS; row++) {
     rows.push(renderRow(row));
     }
-    return <div className="board">{rows}</div>;
+    return <div className="boardConnectFour">{rows}</div>;
     };
     
     const renderMessage = () => {
     if (winner !== null) {
-    return <div className="message">Player {winner} wins!</div>;
+    return <div className="messageConnectFour">Player {winner} wins!</div>;
     } else if (board.every(row => row.every(cell => cell !== EMPTY))) {
-    return <div className="message">It's a tie!</div>;
+    return <div className="messageConnectFour">It's a tie!</div>;
     } else {
-    return <div className="message">Player {currentPlayer}'s turn</div>;
+    return <div className="messageConnectFour">Player {currentPlayer}'s turn</div>;
     }
     };
     
