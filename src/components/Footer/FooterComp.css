@@ -1,0 +1,16 @@
+.disco-text {
+    background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    background-size: 200%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: disco 5s linear infinite;
+  }
+  
+  @keyframes disco {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }

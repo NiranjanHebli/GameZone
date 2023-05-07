@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Grid, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
+import "./FooterComp.css"
 const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: '#000000',
@@ -33,11 +34,12 @@ export default function FooterComp() {
     <footer className={`${classes.footer} ${classes.woodTexture}`} >
       <Typography variant="subtitle1" align="center" gutterBottom style={{color:"ffffff"}}>
       </Typography>
-      <Typography variant="subtitle1" align="center" style={{color:"ffffff"}}>
+      <Typography  className="disco-text" variant="subtitle1" align="center" style={{color:"ffffff"}}>
       ©{new Date().getFullYear()} GameZone
-      <p>A website for gaming enthusiasts!</p>
+      
       </Typography>
       <Typography variant="subtitle1" align="center" style={{color:"ffffff"}}>
+      <p>A website for gaming enthusiasts!</p>
         Made With ♥ by Niranjan Hebli      
       </Typography>
     </footer>
