@@ -1,10 +1,70 @@
-.main{
-    color:floralwhite;
-    margin-top:4px;
-    margin-bottom: 100%;
-    justify-content: center;
-    align-items: center;
+.main {
     display: flex;
     flex-direction: column;
-
-}
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+  
+  button {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  }
+  
+  .choices p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .choices p span {
+    font-weight: bold;
+  }
+  
+  .choices p span:first-child {
+    color: blue;
+  }
+  
+  .choices p span:last-child {
+    color: red;
+  }
+  
+  button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  button:disabled:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  

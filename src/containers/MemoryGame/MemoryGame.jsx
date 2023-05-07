@@ -65,7 +65,6 @@ const MemoryGame = () => {
   return (<>
   
     <div className="memory-game">
-
       <div className="board">
         {cards.map((card, index) => (
           <div
@@ -73,7 +72,6 @@ const MemoryGame = () => {
             className={`card ${card.flipped ? "flipped" : ""}`}
             onClick={() => handleCardClick(index)}
           >
-
             {card.flipped ? card.value : CARD_BACK}
           </div>
 

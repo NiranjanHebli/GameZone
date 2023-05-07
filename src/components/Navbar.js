@@ -1,5 +1,5 @@
 import React from "react";
-// import { Await, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -7,9 +7,12 @@ const Navbar = () => {
   return (
     <div className="">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
+          <h2 className="glitter">
           GameZone
-        </a>
+          </h2>
+
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -28,12 +31,13 @@ const Navbar = () => {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
               <a className="nav-link" href="/#">
-                Home
+              <h3>Home</h3>                
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/#">
-             
+
+              <h3>About</h3>
               </a>
             </li>
             <li className="nav-item">

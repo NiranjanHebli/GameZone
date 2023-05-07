@@ -1,0 +1,132 @@
+.games-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8rem;
+   
+  }
+  .title{
+    font-size: 5rem;
+  }
+
+  .start{
+    margin-bottom:200px;
+  }
+
+  .subsection{
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  
+  .game-card {
+    display: flex;
+    color:#fff;
+    flex-direction: column;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-image: url('http://www.transparenttextures.com/patterns/gplay.png');
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 600px;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .game-card:hover {
+    box-shadow: glitter;
+  }
+  .glitter-box {
+    width: 200px;
+    height: 200px;
+    background-color: #000;
+    border-radius: 5px;
+    border: 
+      0 0 5px #fff, 
+      0 0 10px #fff, 
+      0 0 15px #fff, 
+      0 0 20px #ff00de, 
+      0 0 35px #ff00de, 
+      0 0 40px #ff00de, 
+      0 0 50px #ff00de, 
+      0 0 75px #ff00de;
+    animation: glitter 1s linear infinite;
+  }
+  
+  @keyframes glitter {
+    0% {
+      border: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 15px #fff, 
+        0 0 20px #ff00de, 
+        0 0 35px #ff00de, 
+        0 0 40px #ff00de, 
+        0 0 50px #ff00de, 
+        0 0 75px #ff00de;
+    }
+    100% {
+      border: 
+        0 0 10px #fff, 
+        0 0 20px #fff, 
+        0 0 25px #fff, 
+        0 0 40px #ff00de, 
+        0 0 50px #ff00de, 
+        0 0 60px #ff00de, 
+        0 0 75px #ff00de, 
+        0 0 100px #ff00de;
+    }
+  }
+  
+  .game-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .game-card h2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .game-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .game-card button:hover {
+    background-color: #d00;
+  }
+
+  .glitter {
+    font-weight: bold;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    animation: glitter 1s linear infinite;
+  }
+  
+  @keyframes glitter {
+    0% {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    100% {
+      text-shadow: 0 0 20px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 120px #ff00de, 0 0 150px #ff00de, 0 0 200px #ff00de;
+    }
+  }
+  
+  
