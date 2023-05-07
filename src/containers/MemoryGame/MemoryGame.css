@@ -1,53 +1,66 @@
 .memory-game {
-  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-bottom: 400px;
 }
 
-.board {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 400px;
-  height: 400px;
+.title{
+  text-align: center;
+  margin-top: 100px;
+
 }
+
+.boardMemory{
+  display: flex;
+  flex-wrap: wrap;
+  width: 500px;
+  height: 500px;
+}
+
+.card {
+  width: calc(25% - 20px);
+  height: calc(25% - 20px);
+  margin: 10px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:white;
+  transition: all 0.3s ease-in-out;
+  background-color: #ff0000;
+}
+
+.card:hover {
+  background-color: #eee;
+}
+
+.card.flipped {
+  background-color: #333;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  .board {
+    width: 300px;
+    height: 300px;
+  }
 
   .card {
-    width: calc(25% - 10px);
-    height: calc(25% - 10px);
-    border: 2px solid #333;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    background-color: #fff;
+    width: calc(33.33% - 20px);
+    height: calc(33.33% - 20px);
   }
-  
-  .card:hover {
-    background-color: #eee;
-  }
-  
-  .card.flipped {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  @media screen and (max-width: 480px) {
-    .board {
-      width: 300px;
-      height: 300px;
-    }
-  
-    .card {
-      width: calc(33.33% - 20px);
-      height: calc(33.33% - 20px);
-    }
-  }
-  
+}
+
+.btn-danger{
+  background-color: red;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+}

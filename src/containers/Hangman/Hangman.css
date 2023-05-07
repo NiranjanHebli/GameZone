@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
     font-size: 20px;
     color: #fff;
-    margin-bottom: 100%;
+    margin-bottom: 50px;
   }
   
   .hangman h1 {
@@ -22,7 +22,7 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 100%;
+    margin-bottom: 50px;
   }
   
   .hangman input[type="text"] {
@@ -33,31 +33,16 @@
     margin-right: 10px;
   }
   
-  .hangman button[type="submit"] {
-    font-size: 16px;
-    background-color: rgb(13, 13, 60);
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .hangman button[type="submit"]:hover {
-    background-color: rgb(36, 36, 60);
-  }
-  
-  .hangman button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: auto;
 
-  }
   
-  .hangman button:hover {
-    background-color: #001;
+
+  .btn-danger{
+    background-color: red;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: center;
+    color: white;
+    border-radius: 25px;
   }
+
   

@@ -59,15 +59,20 @@ const RockPaperScissors = () => {
       {!gameOver ? (
         <div>
           <p>Player: {playerScore} Computer: {computerScore}</p>
+          
+          <div className="container">
           <div className="choices">
             {choices.map(choice => (
               <button key={choice} onClick={() => handlePlayerChoice(choice)}>
                 {choice}
               </button>
             ))}
-            <p>Player Choose:{playerChoice} Computer Choose:{computerChoice}</p>
+          
           </div>
+          <div className="container"><p>Player Choose:{playerChoice} Computer Choose:{computerChoice}</p></div>
+            
         </div>
+            </div>
       ) : (
         <div>
           <p>Game over! {winner} wins!</p>

@@ -183,7 +183,7 @@ function ConnectFour() {
     <h1>Connect Four</h1>
     {renderBoard()}
     {renderMessage()}
-    <button onClick={resetGame}>Reset</button>
+    <button onClick={resetGame}>Restart</button>
     </div>
     );
     }

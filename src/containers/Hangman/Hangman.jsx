@@ -75,7 +75,7 @@ const  handleReset=()=> {
       <div className="hangman">
         <h1>Game Over!</h1>
         <p>The word was: {word}</p>
-        <button onClick={handleReset}>Play Again</button>
+        <button className="btn-danger" onClick={handleReset}>Play Again</button>
       </div>
     );
   }
@@ -85,7 +85,7 @@ const  handleReset=()=> {
       <div className="hangman">
         <h1>You Win!</h1>
         <p>The word was: {word}</p>
-        <button onClick={handleReset}>Play Again</button>
+        <button className="btn-danger" onClick={handleReset}>Play Again</button>
       </div>
     );
   }
@@ -101,7 +101,7 @@ const  handleReset=()=> {
           value={guess}
           onChange={(e) => setGuess(e.target.value)}
         />
-        <button type="submit">Guess</button>
+        <button  className="btn-danger" type="submit">Guess</button>
       </form>
     </div>
   );

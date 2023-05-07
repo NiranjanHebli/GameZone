@@ -45,7 +45,7 @@ const Home = () => {
         </div>
 
         <div className="game-card glitter-box">
-          <h2 className="subsection"> RockPaperScissorsGame</h2>
+          <h2 className="subsection"> RockPaperScissors</h2>
           <Link to="/rockpaperscissors">
           <button>Play Now</button>
           </Link>

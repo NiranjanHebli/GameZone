@@ -43,7 +43,8 @@ function Board() {
 
   return (
     <div>
-      <div className="status">{status}</div>
+      <h1 className="heading">XO Game </h1>
+      <div className=" btn-danger status">{status}</div>
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}
@@ -62,14 +63,18 @@ function Board() {
     </div>
   );
 }
-
+const handleOnClick=()=>{
+  window.location.reload()
+}
 function XO() {
   return (
  
     <div className="game">
-      <div className="game-board">
+      <div className="board">
         <Board />
+        <button className="btn-danger" onClick={handleOnClick}>Restart</button>
       </div>
+      
     </div>
 
 

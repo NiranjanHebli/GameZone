@@ -1,6 +1,8 @@
 
 .ConnectFour {
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -10,7 +12,8 @@ h1 {
 
 .board {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 65px;
+  margin-bottom: 10px;
 }
 
 .row {
@@ -22,6 +25,7 @@ h1 {
   height: 50px;
   border: 1px solid black;
   margin: 5px;
+  margin-left: 15px;
   background-color: white;
   cursor: pointer;
 }
@@ -38,19 +42,21 @@ h1 {
 
 .message {
 position: relative;
-background-color: aliceblue;
+background-color: rgb(253, 17, 0);
 bottom: 20px;
-width: 100%;
+width: 50%;
+margin-left: 25%;
+border-radius: 10px;
 font-size: 24px;
 }
 
 button {
 font-size: 24px;
 margin-top: 10px;
-margin-bottom: 100%;
+margin-bottom: 50px;
 padding: 10px 20px;
 border: none;
-background-color: #333;
+background-color: #f30606;
 color: white;
 cursor: pointer;
 }

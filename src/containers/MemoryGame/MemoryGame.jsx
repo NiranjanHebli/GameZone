@@ -24,6 +24,9 @@ const generateCards = () => {
 };
 
 const MemoryGame = () => {
+  const handleOnClick=()=>{
+    window.location.reload()
+  }
   const [cards, setCards] = useState(generateCards());
   const [selectedCards, setSelectedCards] = useState([]);
   useEffect(() => {
@@ -63,9 +66,9 @@ const MemoryGame = () => {
   };
 
   return (<>
-  
+  <h1 className="title">Memory Matching</h1>
     <div className="memory-game">
-      <div className="board">
+      <div className="boardMemory">
         {cards.map((card, index) => (
           <div
             key={index}
@@ -78,7 +81,11 @@ const MemoryGame = () => {
         ))}
 
       </div>
+
+      <button onClick={handleOnClick}>Restart</button>
+      
     </div>
+   
     </>
   );
 };

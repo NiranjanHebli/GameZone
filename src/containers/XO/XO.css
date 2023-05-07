@@ -44,10 +44,22 @@
     width:100px;
     margin: 2px;
     font-weight: bold;
-    color: #2d3748;
+    color: red;
+    background-color:rgb(40, 46, 66);
     cursor: pointer;
   }
+  .heading{
+    text-align: center;
+  }
   
+  .btn-danger{
+    background-color: red;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: white;
+    border-radius: 20px;
+  }
   .square:hover {
     background-color: #e2e8f0;
   }
@@ -56,8 +68,4 @@
     outline: none;
   }
   
-  .square--winner {
-    background-color: #48bb78;
-    color: white;
-  }
   
