@@ -82,9 +82,10 @@ const MemoryGame = () => {
 
       </div>
 
-      <button onClick={handleOnClick}>Restart</button>
       
     </div>
+    
+    <button onClick={handleOnClick}>Restart</button>
    
     </>
   );

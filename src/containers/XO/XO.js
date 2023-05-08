@@ -60,6 +60,7 @@ function Board() {
         {renderSquare(7)}
         {renderSquare(8)}
       </div>
+      <button className="btn-dangerXO" onClick={handleOnClick}>Restart</button>
     </div>
   );
 }
@@ -68,16 +69,17 @@ const handleOnClick=()=>{
 }
 function XO() {
   return (
- 
-    <div className="game">
+ <>  <div className="game">
       <div className="board">
         <Board />
-        <button className="btn-danger" onClick={handleOnClick}>Restart</button>
-      </div>
       
+      </div>
+
+   
     </div>
 
 
+</>
   );
 }
 
