@@ -40,7 +40,9 @@ function Board() {
   } else {
     status = 'Next player: ' + (xIsNext ? 'X' : 'O');
   }
-
+  const handleOnClick=()=>{
+    window.location.reload()
+  }
   return (
     <div>
       <h1 className="heading">XO Game </h1>
@@ -64,11 +66,11 @@ function Board() {
     </div>
   );
 }
-const handleOnClick=()=>{
-  window.location.reload()
-}
+
 function XO() {
+
   return (
+
  <>  <div className="game">
       <div className="board">
         <Board />
