@@ -79,13 +79,16 @@ const MemoryGame = () => {
           </div>
 
         ))}
-
+    <button className="btn-danger" onClick={handleOnClick}>Restart</button>
       </div>
 
       
     </div>
-    
-    <button onClick={handleOnClick}>Restart</button>
+
+    <div>
+
+
+    </div>
    
     </>
   );
